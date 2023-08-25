@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1f00e43a3e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Developer</p>
+                <H1>Hi, I'm <span>Serazy</span></H1>
+            </div>
+        </div>
+    </div>
+
+    <!------------ About  ------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="des">Hi, I am Tanvir Hasan Serazy, I am a full-stack Web Developer and an UI/UX designer.
+                        I have done 50+ projects in this field. I want to become best at what I do. I am also learning
+                        APP development using MERN. I am dedicated towards my goals and thriving for better future.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/app Interfaces</li>
+                            <li><span>Web-Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>50+ Projects</li>
+                            <li><span>2023 - Current</span><br>50+ Projects</li>
+                            <li><span>2023 - Currentt</span><br>50+ Projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>YouTube and Free resources</li>
+                            <li><span>2023</span><br>YouTube and Free resources</li>
+                            <li><span>2023</span><br>Bangladesh University of Business and Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ Services ------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I am a professional Website designer. I mostly design on figma.</p>
+                    <a href="#">Learn More Here</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>Web-Development</h2>
+                    <p>I am a full-stack Web-Developer. I can design your whole website. Deploy it and host it. I can
+                        also maintain your website.</p>
+                    <a href="#">Learn More Here</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App-Development</h2>
+                    <p>I am a App Developer. I use MERN stack to make webapps.</p>
+                    <a href="#">Learn More Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------- Portfolio -------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This is a vanila texting app which is easy to use and you can connect to your close once
+                            easily and chat with them safely.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work2.jpg">
+                    <div class="layer">
+                        <h3>E-commerce App</h3>
+                        <p>This is a smoot and easy to use E-commerce app that attracts user for its interface and
+                            usability.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work3.jpg">
+                    <div class="layer">
+                        <h3>News App</h3>
+                        <p>This is a clean and ad-free news app that helps its user to stay up-to date about what's
+                            happening around the world about everything. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------ contact ------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Thserazy@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>Phone No: +8801883266793</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/T.H.Serazy/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/tanvirserazy/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://t.me/Serazy069"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://discordapp.com/users/689402896047013889"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://wa.me/+8801883266793"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/tanvir-hasan-serazy-592bbb209/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/My-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy SERAZY. All Right reserved.
+        </div>
+    </div>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypP9SS9rJCosPwxL87YwvhLjXJnnN1pRuJRFfW6Wh4fO8-jdngPs_DQnbtm5ym2j6ujA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
